@@ -1,0 +1,1 @@
+Çünkü neden olmasın
