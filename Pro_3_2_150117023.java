@@ -33,6 +33,7 @@ public class Pro_3_2_150117023 {
                     size = input.nextInt();
                 }
             }
+		correctSize = false;
             //getting letter
             System.out.print("Enter the letter: ");
             String letter = input.next().toUpperCase();
@@ -44,6 +45,7 @@ public class Pro_3_2_150117023 {
                     letter = input.next().toUpperCase();
                     }
             }
+		correctLetter = false;
             //controls for letters
             switch(letter.charAt(0)){
                 //  Z letter
@@ -133,7 +135,7 @@ public class Pro_3_2_150117023 {
             if(ifContinue.charAt(0) == 'Y'); //it is an empty if block
             else{
                 continued = false;
-                System.out.println("Program ends...");
+                System.out.println("Program ends, see you later!");
             }
             
         }while(continued);
