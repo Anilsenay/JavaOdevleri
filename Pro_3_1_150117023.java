@@ -31,13 +31,13 @@ public class Pro_3_1_150117023 {
             else{
                 int j = 0;
                 while( j < times){
-                    if(sequence.charAt(i) == 'b') 
+                    if(sequence.charAt(i) == 'b') //to print black character
                         System.out.print(" ");
                     
-                    if(sequence.charAt(i) == 's')
+                    if(sequence.charAt(i) == 's') //to print *
                         System.out.print("*");
                     
-                    if(sequence.charAt(i) == 'n')
+                    if(sequence.charAt(i) == 'n') //to go new line
                         System.out.print("\n");
                     
                 j++;
