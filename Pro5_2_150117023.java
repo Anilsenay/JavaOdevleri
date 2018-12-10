@@ -25,12 +25,10 @@ public class Pro5_2_150117023 {
 		stringToArray(inputString, inputArray);
 
 		int[][] updatedTable = new int[arraySize][arraySize];
+
 		fillUpdatedTable(updatedTable, inputArray);
-		for(int i = 0; i < updatedTable.length; i++){
-			for(int j = 0; j < updatedTable[i].length; j++)
-				System.out.print(updatedTable[i][j]);
-			System.out.println();
-		}
+
+		drawArray(updatedTable);
 	}
 
 	public static int defineArraySize(String str) {
@@ -73,5 +71,22 @@ public class Pro5_2_150117023 {
 		for(int i = 0; i < TwoDTable.length; i++){
 			TwoDTable[i] = convertDectoB(OneDArray[i], OneDArray.length);
 		}
+	}
+
+	public static void drawArray(int[][] TwoDTable){
+		for(int i = 0; i < TwoDTable.length; i++){
+			for(int k = 0; k < TwoDTable.length*4+1; k++)
+				System.out.print("-");
+			System.out.println();
+			for(int j = 0; j < TwoDTable.length; j++){
+				//System.out.println("--------------------");
+				System.out.print("| " + TwoDTable[i][j] + " ");
+			}
+			System.out.print("|\n");
+		}
+
+		for(int k = 0; k < TwoDTable.length*4+1; k++)
+			System.out.print("-");
+		System.out.println();
 	}
 }
