@@ -1,2 +1,6 @@
 ### for classes ###
 *.class
+*.swp
+*.save
+/JavaOdevleri/nbproject/private/
+*-old.java
